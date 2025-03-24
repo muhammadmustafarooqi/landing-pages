@@ -1,0 +1,10 @@
+*{
+    font-family: sans-serif;
+}
+.sidenavbar{
+    position: fixed;
+    right: -250px;
+    top: 0;
+    overflow: hidden;
+}
+

@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif; /* Capitalized 'Poppins' */
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px
+}
+.menu-icon:hover{
+    /* transform: scale(0.5) translateX(50px); */
+    /*color: #007BFF;  Change color on hover */
+    /* transform: scale(1.2); Scale effect */
+    transform: scale(1.2); /* Scale effect */
+    filter: brightness(1.2); /* Slightly brighten the image */
+
+}
+
+.nav-items {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-items ul li {
+    display: inline-block;
+    margin-left: 60px;
+    list-style: none;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.nav-items ul li a:hover {
+    background-color: rgba(225, 88, 88, 0.749);
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+.row{
+    height: 88%;
+display: flex;
+align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+.col h1{
+color: #fff;
+font-size: 100px;
+}
+.col p{
+    font-size: 11px;
+    color: #fff;
+    line-height: 15px;
+}
+.col button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.col button:hover{
+    background-color:#B7410E ;
+    border: 2px solid #fff;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+
+}
+.card1{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(images/pic-1.png);
+    background-position: center;
+    background-size: cover;
+}
+.card1:hover{
+    transform: translateY(-10px);
+}
+.card2{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(images/pic-2.png);
+    background-position: center;
+    background-size: cover;
+}
+.card2:hover{
+    transform: translateY(-10px);
+}
+
+.card3{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(images/pic-3.png);
+    background-position: center;
+    background-size: cover;
+}
+.card3:hover{
+    transform: translateY(-10px);
+}
+
+.card4{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(images/pic-4.png);
+    background-position: center;
+    background-size: cover;
+}
+.card4:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow:0 0 5px #000;
+}
+.card1 p{
+    margin-top: 10px;
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+.card2 p{
+    margin-top: 10px;
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+.card3 p{
+    margin-top: 10px;
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+.card4 p{
+    margin-top: 10px;
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+/* Media quries starts */
+/* For MObile Screens */
+@media (min-width: 320px) and (max-width: 375px) {
+    .container {
+        padding-left: 4%;
+        padding-right: 4%;
+        height: 100vh; /* Full viewport height */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        height: 10%;
+    }
+
+    .logo {
+        width: 30px; /* Smaller logo for smaller screens */
+    }
+
+    .menu-icon {
+        width: 20px;
+    }
+
+    .nav-items ul li {
+        margin-left: 10px; /* Reduced spacing between navigation items */
+    }
+
+    .nav-items ul li a {
+        font-size: 10px; /* Smaller font size for navigation items */
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align content */
+        height: auto;
+    }
+
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 15px; /* Add space between columns */
+    }
+
+    .col h1 {
+        font-size: 40px; /* Adjust heading size */
+    }
+
+    .col p {
+        font-size: 10px; /* Smaller paragraph font size */
+        line-height: 14px;
+    }
+
+    .col button {
+        width: 130px; /* Adjust button width */
+        font-size: 10px;
+        padding: 10px 0;
+    }
+
+    /* Stack cards vertically with full width on small screens */
+    .card1, .card2, .card3, .card4 {
+        width: 100%;
+        height: 150px; /* Reduce card height */
+        margin: 10px 0; /* Space between cards */
+    }
+
+    /* Adjust text size inside cards */
+    .card1 p, .card2 p, .card3 p, .card4 p {
+        font-size: 8px; /* Smaller font size for card content */
+    }
+
+    .card1 h5, .card2 h5, .card3 h5, .card4 h5 {
+        font-size: 12px; /* Smaller font for card headings */
+    }
+}
+
+/* FOR tablet */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 100vh; /* Ensure the container takes full viewport height */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.png);
+        background-position: center;
+        background-size: cover; /* Ensure the background covers the full screen */
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        height: 10%;
+    }
+
+    .logo {
+        width: 40px; /* Smaller logo for tablets */
+    }
+
+    .menu-icon {
+        width: 30px;
+    }
+
+    .nav-items ul li {
+        margin-left: 20px; /* Reduce space between nav items */
+    }
+
+    .nav-items ul li a {
+        font-size: 12px; /* Slightly smaller font */
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center; /* Center align content for a cleaner look */
+        height: auto; /* Ensure row adapts to content height */
+    }
+
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Add some space between columns */
+    }
+
+    .col h1 {
+        font-size: 60px; /* Adjust the main heading size */
+    }
+
+    .col p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .col button {
+        width: 150px;
+        font-size: 12px;
+    }
+
+    /* Make cards stack vertically for better readability */
+    .card1, .card2, .card3, .card4 {
+        width: 90%;
+        height: 200px;
+        margin: 10px auto; /* Center the cards and add space */
+    }
+
+    /* Adjust card text size */
+    .card1 p, .card2 p, .card3 p, .card4 p {
+        font-size: 10px;
+    }
+
+    .card1 h5, .card2 h5, .card3 h5, .card4 h5 {
+        font-size: 14px;
+    }
+}
+
+/* For screens with a width of 1024px */
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 6%;
+        padding-right: 6%;
+        height: 100vh; /* Full viewport height */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        height: 12%;
+    }
+
+    .logo {
+        width: 45px; /* Adjust logo size for medium-sized screens */
+    }
+
+    .menu-icon {
+        width: 25px;
+    }
+
+    .nav-items ul li {
+        margin-left: 40px; /* Adjust space between nav items */
+    }
+
+    .nav-items ul li a {
+        font-size: 14px; /* Adjust font size for nav items */
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Add space between columns */
+    }
+
+    .col h1 {
+        font-size: 70px; /* Adjust main heading size for larger screens */
+    }
+
+    .col p {
+        font-size: 14px; /* Increase paragraph font size */
+        line-height: 20px;
+    }
+
+    .col button {
+        width: 160px; /* Adjust button width */
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    /* Adjust card sizes for better visibility on 1024px screens */
+    .card1, .card2, .card3, .card4 {
+        margin-top: 50px;
+        width: 260px;
+        height: 270px;
+        
+    }
+
+    /* Adjust font size inside cards */
+    .card1 p, .card2 p, .card3 p, .card4 p {
+        font-size: 10px; /* Slightly increase font size for card content */
+    }
+
+    .card1 h5, .card2 h5, .card3 h5, .card4 h5 {
+        font-size: 14px; /* Adjust font size for card headings */
+    }
+}
